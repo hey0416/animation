@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url(../img/sub2.jpg) top;
+}
+
+.wrap .apple {
+    position: absolute;
+    right: 470px;
+    top: 350px;
+    cursor: pointer;
+}
+
+.wrap .apple img:first-child {
+    position: absolute;
+    left: -176px;
+    top: -325px;
+}
+
+.wrap .apple img:nth-child(2) {
+    position: absolute;
+    animation: fall 2s ease-in 2;
+    display: none;
+}
+
+.wrap .apple img:nth-child(2).on {
+    display: block;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-70px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-50px) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateY(5px) rotate(10deg);
+    }
+
+    75% {
+        transform: translateY(15px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.wrap>img {
+    position: absolute;
+    left: 700px;
+    top: 250px;
+}
+
+.watermelon {
+    position: absolute;
+}
+
+.watermelon img:first-child {
+    position: absolute;
+    left: 350px;
+    top: 750px;
+    cursor: pointer;
+}
+
+.watermelon img:nth-child(2) {
+    position: absolute;
+    left: 550px;
+    top: 850px;
+    overflow: hidden;
+}
+
+.watermelon img:nth-child(3) {
+    position: absolute;
+    left: 450px;
+    top: 750px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s linear;
+}
+
+.watermelon img:nth-child(3).on {
+    opacity: 1;
+    visibility: visible;
+}
+
+.watermelon img:last-child {
+    position: absolute;
+    left: 600px;
+    top: 850px;
+    display: none;
+}
+
+.watermelon img:last-child.on {
+    display: block;
+}
+
+.speech>img:first-child {
+    position: absolute;
+    right: 600px;
+    top: 100px;
+}
+
+.speech>img:first-child.on {
+    display: none;
+}
+
+.speech>img:nth-child(2) {
+    position: absolute;
+    left: 550px;
+    bottom: 200px;
+}
+
+.speech>img:nth-child(2).on {
+    display: none;
+}
+
+.arrow a:first-child img {
+    position: absolute;
+    left: 50px;
+    top: 850px;
+}
+
+.arrow a:last-child img {
+    position: absolute;
+    left: 1750px;
+    top: 850px;
+}

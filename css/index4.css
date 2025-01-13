@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url(../img/sub1.jpg) top;
+}
+
+.wrap .bee img:first-child {
+    position: absolute;
+    left: 150px;
+    top: 300px;
+}
+
+.wrap .bee img:nth-child(2) {
+    position: absolute;
+    left: 570px;
+    top: 260px;
+    cursor: pointer;
+}
+
+.wrap .bee img:nth-child(3) {
+    position: absolute;
+    left: 470px;
+    top: 450px;
+}
+
+.wrap .bee img:nth-child(4) {
+    position: absolute;
+    left: 500px;
+    bottom: 250px;
+    animation: flyPath 9s infinite ease-out, wiGgle 0.2s infinite ease-in-out;
+
+}
+
+@keyframes flyPath {
+    0% {
+        top: 50%;
+        left: 0%;
+    }
+
+    50% {
+        top: 30%;
+        left: 25%;
+    }
+
+    75% {
+        top: 60%;
+        left: 40%;
+    }
+
+    90% {
+        top: 70%;
+        left: 15%;
+    }
+
+    100% {
+        top: 50%;
+        left: 0%;
+    }
+
+}
+
+@keyframes wiGgle {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.wrap .bee img:nth-child(5) {
+    position: absolute;
+    left: 70px;
+    bottom: 400px;
+    animation: fly 4s infinite ease-in-out, wiggle 0.2s infinite ease-in-out;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-60%, -40%) rotate(10deg);
+    }
+
+    50% {
+        transform: translate(-40%, -60%) rotate(-10deg);
+    }
+
+    75% {
+        transform: translate(-50%, -70%) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(2deg);
+    }
+}
+
+.wrap .bee img:nth-child(6) {
+    position: absolute;
+    left: 50px;
+    bottom: 70px;
+}
+
+.wrap .bee img:nth-child(7) {
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    display: none;
+}
+
+.wrap .bee img:nth-child(7).on {
+    display: block;
+}
+
+.wrap .bee img:last-child {
+    position: absolute;
+    left: 450px;
+    top: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 1s linear;
+}
+
+.wrap .bee img:last-child.on {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.wrap .henhouse {
+    position: relative;
+}
+
+.wrap .henhouse img:first-child {
+    position: absolute;
+    right: 330px;
+    top: 250px;
+    cursor: pointer;
+}
+
+.wrap .henhouse img:nth-child(2) {
+    position: absolute;
+    right: 600px;
+    top: 450px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: all 1s linear;
+}
+
+.wrap .henhouse img:nth-child(2).on {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.speech>img:first-child {
+    position: absolute;
+    left: 600px;
+    top: 200px;
+}
+
+.speech>img:first-child.on {
+    display: none;
+}
+
+.speech>img:nth-child(2) {
+    position: absolute;
+    right: 450px;
+    top: 300px;
+}
+
+.speech>img:nth-child(2).on {
+    display: none;
+}
+
+.arrow a:first-child img {
+    position: absolute;
+    left: 1750px;
+    top: 850px;
+}

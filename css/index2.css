@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url(../img/main2.jpg) top;
+}
+
+.desk {
+    position: absolute;
+    left: 180px;
+    top: -270px;
+}
+
+.coffee_table>img:nth-child(1) {
+    position: absolute;
+    left: 1200px;
+    top: -50px;
+}
+
+.coffee_table>img:nth-child(2) {
+    position: absolute;
+    left: 1300px;
+    top: 100px;
+}
+
+.coffee_table .coffee {
+    width: 270px;
+    height: 272px;
+    background: url(../img/coffeemuchine.png);
+    position: absolute;
+    left: 1450px;
+    top: -7px;
+    animation: coffeeSmoke 2s 1s infinite;
+}
+
+@keyframes coffeeSmoke {
+    from {}
+
+    to {
+        background: url(../img/smoke.png)
+    }
+}
+
+.lounge>img:nth-child(1) {
+    position: absolute;
+    left: 800px;
+    top: 350px;
+}
+
+.lounge>img:nth-child(2) {
+    position: absolute;
+    left: 350px;
+    top: 550px;
+    z-index: 1;
+}
+
+.lounge>img:nth-child(3) {
+    position: absolute;
+    left: 770px;
+    top: 620px;
+    z-index: 2;
+}
+
+.lounge .angry_people {
+    width: 382px;
+    height: 615px;
+    position: absolute;
+    background: url(../img/people5.png) no-repeat;
+    left: 850px;
+    top: 330px;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.lounge .angry_people.on {
+    animation: tiredAni 2s forwards;
+}
+
+@keyframes tiredAni {
+    from {}
+
+    to {
+        left: 700px;
+        top: 150px;
+        background: url(../img/angrypeople.png) no-repeat;
+    }
+}
+
+.coffee_girl img:nth-child(2) {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    cursor: pointer;
+}
+
+.coffee_girl img:first-child {
+    position: absolute;
+    left: 240px;
+    top: 245px;
+    transition: all 0.7s ease-in-out;
+}
+
+.coffee_girl img:first-child.on {
+    animation: coffeeDrink 3s forwards;
+    transform-origin: left;
+}
+
+@keyframes coffeeDrink {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-50deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.speech>img:first-child {
+    position: absolute;
+    left: 900px;
+    top: 300px;
+}
+
+.speech>img:first-child.on {
+    display: none;
+}
+
+.speech>img:nth-child(2) {
+    position: absolute;
+    left: 300px;
+    top: 150px;
+}
+
+.speech>img:nth-child(2).on {
+    display: none;
+}
+
+.arrow a:first-child img {
+    position: absolute;
+    left: 50px;
+    top: 850px;
+}
+
+.arrow a:last-child img {
+    position: absolute;
+    left: 1750px;
+    top: 850px;
+}

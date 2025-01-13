@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading_ring {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 17px solid rgba(0, 0, 0, 0.1);
+    border-top: 17px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1.5s linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #3498db;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url(../img/main1.jpg) center;
+}
+
+.meeting>img:first-child {
+    position: absolute;
+    left: 400px;
+    top: 10px
+}
+
+.meeting>img:nth-child(2) {
+    position: absolute;
+    left: 700px;
+    top: 250px;
+}
+
+.meeting .people img:first-child {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+.meeting .people .angry_girl {
+    width: 300px;
+    height: 520px;
+    position: absolute;
+    background: url(../img/people2.png) no-repeat;
+    left: 600px;
+    top: 350px;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.meeting .people .angry_girl.on {
+    background: url(../img/angrypeople2.png) no-repeat;
+}
+
+.meeting .people .angry_boy {
+    width: 330px;
+    height: 520px;
+    position: absolute;
+    background: url(../img/people3.png) no-repeat;
+    left: 1250px;
+    top: 350px;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.meeting .people .angry_boy.on {
+    background: url(../img/angrypeople3.png)no-repeat;
+}
+
+.meeting .speech>img:first-child {
+    position: absolute;
+    left: 800px;
+    top: 300px;
+}
+
+.meeting .speech>img:first-child.on {
+    display: none;
+}
+
+.meeting .speech>img:last-child {
+    position: absolute;
+    left: 1300px;
+    top: 300px;
+}
+
+.meeting .speech>img:last-child.on {
+    display: none;
+}
+
+.meeting a img {
+    position: absolute;
+    left: 1750px;
+    top: 850px;
+}

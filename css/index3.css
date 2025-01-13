@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url(../img/main3.jpg) top;
+}
+
+.wall>img {
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+}
+
+.main_desk .desk>img:first-child {
+    position: absolute;
+    left: 750px;
+    top: 300px;
+    z-index: 3;
+}
+
+.main_desk .desk>img:nth-child(2) {
+    position: absolute;
+    left: 1530px;
+    top: 440px;
+}
+
+.main_desk .desk>img:nth-child(3) {
+    position: absolute;
+    left: 1590px;
+    top: 500px;
+    animation: tellBell 1s 1s infinite;
+}
+
+@keyframes tellBell {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+
+}
+
+.main_desk .desk>img:nth-child(4) {
+    position: absolute;
+    left: 1610px;
+    top: 380px;
+    animation: muSic 1s 1s infinite;
+}
+
+@keyframes muSic {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+
+}
+
+.main_desk .desk .click {
+    position: absolute;
+    left: 940px;
+    top: 330px;
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+    background: url(../img/speech_right.png) no-repeat;
+    cursor: pointer;
+}
+
+.main_desk .desk .click.on {
+    animation: letter .7s linear forwards;
+}
+
+@keyframes letter {
+    from {}
+
+    to {
+        left: 1200px;
+        top: 550px;
+        width: 380px;
+        height: 200px;
+        background: url(../img/letter.png) no-repeat;
+    }
+}
+
+.main_desk .desk .click .stamp {
+    position: absolute;
+    left: 230px;
+    top: 50px;
+    cursor: pointer;
+    width: 40px;
+    height: 75px;
+    background: url(../img/stamp_bf.png) no-repeat;
+    display: none;
+}
+
+.main_desk .desk .click.on .stamp {
+    display: block;
+}
+
+.main_desk .desk .click .stamp.on{
+    animation: stamp 1s forwards;
+}
+
+@keyframes stamp {
+    from {
+    }
+
+    to {
+        left: 235px;
+        top: 50px;
+        width: 270px;
+        height: 150px;
+        background: url(../img/stamp.png) no-repeat;
+    }
+}
+
+.main_desk img:nth-child(2) {
+    position: absolute;
+    left: 70px;
+    top: 100px;
+}
+
+.main_desk img:nth-child(3) {
+    position: absolute;
+    left: 450px;
+    top: 50px;
+}
+
+.main_desk>img:last-child {
+    position: absolute;
+    left: 520px;
+    top: 100px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.main_desk .people6 {
+    width: 416px;
+    height: 600px;
+    position: absolute;
+    left: 480px;
+    top: -50px;
+    background: url(../img/people6.png) no-repeat;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+    z-index: 1;
+}
+
+.main_desk .people6.on {
+    width: 416px;
+    height: 600px;
+    position: absolute;
+    left: 480px;
+    top: -50px;
+    cursor: pointer;
+    z-index: 1;
+    background: url(../img/paperpeople.png) no-repeat;
+}
+
+.speech img:first-child {
+    position: absolute;
+    left: 730px;
+}
+
+.arrow a:first-child img {
+    position: absolute;
+    left: 50px;
+    top: 850px;
+    z-index: 1;
+}
